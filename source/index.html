@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Заголовок</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link href="fonts/oswaldregular.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
     <link href="fonts/oswaldmeduim.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
@@ -13,6 +14,9 @@
       <img class="page-header__logo" src="img/logo.png" alt="">
       <div class="page-header__phone">
         <a class="page-header__link" href="tel:+7 (999) 999-99-99">+7 (999) 999-99-99</a>
+        <a class="page-header__icon-phone" href="tel:+7 (999) 999-99-99">
+          <img src="img/icon-phone.png" alt="">
+        </a>
       </div>
     </header>
 
@@ -40,7 +44,10 @@
 
         </div>
         <div class="first-screen__photo">
-          <img class="first-screen__photo-img" src="img/first-screen_2@1x.jpg" alt="">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/first-screen_2@1x.jpg">
+            <img class="first-screen__photo-img" src="img/first-screen@1x.jpg" alt="">
+          </picture>
         </div>
       </div>
     </main>

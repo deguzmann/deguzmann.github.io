@@ -2,6 +2,7 @@
   padding: 10px 20px;
 
   &--orange {
+    font-size: 26px;
     background-color: #ffd248;
     color: #000000;
     transition: all 0.3s;
@@ -10,6 +11,10 @@
       /* background-color: #f3c53a; */
       box-shadow: 3px 3px 6px 0 #cacaca;
       color: #fafdfa;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
     }
   }
 }

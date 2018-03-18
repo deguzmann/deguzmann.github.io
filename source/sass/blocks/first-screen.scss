@@ -1,20 +1,37 @@
 .first-screen {
-  @include width-wrapper(1300px);
+  @media (min-width: $desktop-width) {
+    @include width-wrapper(1300px);
+  }
 }
 
 .first-screen__inner {
-  padding: 0 40px;
+  padding: 0 20px;
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    @include width-wrapper(1300px);
+    padding: 0 40px;
+    flex-direction: row;
+  }
 }
 
 .first-screen__info {
-  position: relative;
-  width: 500px;
+  position: absolute;
+  left: 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 500px;
+  }
 }
 
 .first-screen__photo {
+  margin-top: 160px;
   flex-grow: 1;
-  width: 500px;
   position: relative;
 
   &::before {
@@ -50,10 +67,17 @@
     border-bottom: 6px solid rgba(255, 210, 72, 0.7);
     border-left: 6px solid rgba(255, 210, 72, 0.7);
   } */
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    width: 500px;
+    display: block;
+  }
 }
 
 .first-screen__info-header {
   margin-top: 36px;
+  margin: -20px;
   position: relative;
   z-index: 2;
   display: flex;
@@ -61,24 +85,34 @@
   align-items: center;
 
   p {
+    padding: 0 20px;
     line-height: 32px;
     display: inline-block;
-    width: 300px;
-    font-size: 38px;
+    font-size: 34px;
     color: #fafdfa;
   }
 
   &::before {
-    content: " ";
-    position: absolute;
-    top: -2px;
-    left: -20px;
-    z-index: -1;
-    display: block;
-    width: 120%;
-    height: 75%;
-    background-color: #ffd248;
-    width: calc(100% + 120px);
+      content: " ";
+      position: absolute;
+      top: 9px;
+      z-index: -1;
+      display: block;
+      width: 100%;
+      height: 75%;
+      background-color: #ffd248;
+    }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 30px;
+
+    &::before {
+      top: -2px;
+      left: -20px;
+      width: 120%;
+      width: calc(100% + 120px);
+    }
   }
 }
 
@@ -94,13 +128,34 @@
 
 .first-screen__title {
   margin-top: 0;
+  padding: 0 20px;
+  font-size: 46px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .first-screen__menu {
-  margin-top: 36px;
+  margin-top: 300px;
   margin-bottom: 46px;
+  padding-left: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 36px;
+    margin-bottom: 8px;
+    padding-left: 40px;
+  }
 }
 
 .first-screen__btn {
-  margin-left: 40px;
+  margin-left: 0;
+  margin-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+
 }
