@@ -3,22 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Заголовок</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link href="fonts/oswaldregular.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
-    <link href="fonts/oswaldmedium.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+    <link href="fonts/oswaldmeduim.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
   </head>
   <body>
 
     <header class="page-header  page-header--nojs">
-      <div class="nav">
-
+      <img class="page-header__logo" src="img/logo.png" alt="">
+      <div class="page-header__phone">
+        <a class="page-header__link" href="tel:+7 (999) 999-99-99">+7 (999) 999-99-99</a>
       </div>
-      <!-- /.nav -->
     </header>
 
-    <main class="page-main">
+    <main class="page-main  first-screen">
+      <div class="first-screen__inner">
+        <div class="first-screen__info">
+          <div class="first-screen__info-header">
+            <p>Фото и видеосъемка мероприятий</p>
+            <!-- <span class="first-screen__line"></span> -->
+            <h1 class="first-screen__title">Алексей Пчелов</h1>
+          </div>
 
+          <ul class="first-screen__menu  menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Мои работы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Обо мне</a>
+            </li>
+          </ul>
+
+          <div class="first-screen__btn">
+            <a class="btn  btn--orange" href="#">Связаться со мной</a>
+          </div>
+
+        </div>
+        <div class="first-screen__photo">
+          <img class="first-screen__photo-img" src="img/first-screen_2@1x.jpg" alt="">
+        </div>
+      </div>
     </main>
 
     <footer class="page-footer">

@@ -1,0 +1,15 @@
+.btn {
+  padding: 10px 20px;
+
+  &--orange {
+    background-color: #ffd248;
+    color: #000000;
+    transition: all 0.3s;
+
+    &:hover {
+      /* background-color: #f3c53a; */
+      box-shadow: 3px 3px 6px 0 #cacaca;
+      color: #fafdfa;
+    }
+  }
+}

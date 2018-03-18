@@ -3,9 +3,10 @@ body {
   margin: 0;
   padding: 0;
   color: #444444;
-  font-family: "Arial", sans-serif;
+  font-family: "Oswaldregular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  background-color: #fafdfa;
 
   @media (min-width: $tablet-width) {
     line-height: 24px;
@@ -48,6 +49,10 @@ img {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 .visually-hidden:not(:focus):not(:active) {
